@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E420801CBDCC4500085EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E4207F1CBDCC4500085EE5 /* main.m */; };
+		63E420831CBDCC4500085EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420821CBDCC4500085EE5 /* AppDelegate.m */; };
+		63E420891CBDCC4500085EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E420871CBDCC4500085EE5 /* Main.storyboard */; };
+		63E4208C1CBDCC4500085EE5 /* HingeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63E4208A1CBDCC4500085EE5 /* HingeApp.xcdatamodeld */; };
+		63E4208E1CBDCC4500085EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4208D1CBDCC4500085EE5 /* Assets.xcassets */; };
+		63E420911CBDCC4500085EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4208F1CBDCC4500085EE5 /* LaunchScreen.storyboard */; };
+		63E4209C1CBDCC4500085EE5 /* HingeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E4209B1CBDCC4500085EE5 /* HingeAppTests.m */; };
+		63E420A71CBDCC4500085EE5 /* HingeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420A61CBDCC4500085EE5 /* HingeAppUITests.m */; };
+		63E420B91CBDCD6000085EE5 /* DPRCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */; };
+		ED0103F54EB1047331522F4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C472082D82B1B0D0D54D7FF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E420981CBDCC4500085EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E420731CBDCC4500085EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E4207A1CBDCC4500085EE5;
+			remoteInfo = HingeApp;
+		};
+		63E420A31CBDCC4500085EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E420731CBDCC4500085EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E4207A1CBDCC4500085EE5;
+			remoteInfo = HingeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17D7197FBCEEBBA7C89CDAAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5FD9EBE5E985762ADB31EAD9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		63E4207B1CBDCC4500085EE5 /* HingeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HingeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E4207F1CBDCC4500085EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63E420811CBDCC4500085EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63E420821CBDCC4500085EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63E420881CBDCC4500085EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63E4208B1CBDCC4500085EE5 /* HingeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HingeApp.xcdatamodel; sourceTree = "<group>"; };
+		63E4208D1CBDCC4500085EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63E420901CBDCC4500085EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63E420921CBDCC4500085EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E420971CBDCC4500085EE5 /* HingeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HingeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E4209B1CBDCC4500085EE5 /* HingeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HingeAppTests.m; sourceTree = "<group>"; };
+		63E4209D1CBDCC4500085EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E420A21CBDCC4500085EE5 /* HingeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HingeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E420A61CBDCC4500085EE5 /* HingeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HingeAppUITests.m; sourceTree = "<group>"; };
+		63E420A81CBDCC4500085EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E420B71CBDCD6000085EE5 /* DPRCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRCollectionVC.h; sourceTree = "<group>"; };
+		63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRCollectionVC.m; sourceTree = "<group>"; };
+		6C472082D82B1B0D0D54D7FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E420781CBDCC4500085EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0103F54EB1047331522F4E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E420941CBDCC4500085EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E4209F1CBDCC4500085EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2930B8297E36D342BE5B304C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C472082D82B1B0D0D54D7FF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E420721CBDCC4500085EE5 = {
+			isa = PBXGroup;
+			children = (
+				63E4207D1CBDCC4500085EE5 /* HingeApp */,
+				63E4209A1CBDCC4500085EE5 /* HingeAppTests */,
+				63E420A51CBDCC4500085EE5 /* HingeAppUITests */,
+				63E4207C1CBDCC4500085EE5 /* Products */,
+				6CFBF809BAD5439C27FF601E /* Pods */,
+				2930B8297E36D342BE5B304C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63E4207C1CBDCC4500085EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E4207B1CBDCC4500085EE5 /* HingeApp.app */,
+				63E420971CBDCC4500085EE5 /* HingeAppTests.xctest */,
+				63E420A21CBDCC4500085EE5 /* HingeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E4207D1CBDCC4500085EE5 /* HingeApp */ = {
+			isa = PBXGroup;
+			children = (
+				63E420B61CBDCC6000085EE5 /* Controller */,
+				63E420B51CBDCC5B00085EE5 /* View */,
+				63E420B41CBDCC5700085EE5 /* Model */,
+				63E420811CBDCC4500085EE5 /* AppDelegate.h */,
+				63E420821CBDCC4500085EE5 /* AppDelegate.m */,
+				63E4208D1CBDCC4500085EE5 /* Assets.xcassets */,
+				63E4208F1CBDCC4500085EE5 /* LaunchScreen.storyboard */,
+				63E420921CBDCC4500085EE5 /* Info.plist */,
+				63E4208A1CBDCC4500085EE5 /* HingeApp.xcdatamodeld */,
+				63E4207E1CBDCC4500085EE5 /* Supporting Files */,
+			);
+			path = HingeApp;
+			sourceTree = "<group>";
+		};
+		63E4207E1CBDCC4500085EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63E4207F1CBDCC4500085EE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63E4209A1CBDCC4500085EE5 /* HingeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E4209B1CBDCC4500085EE5 /* HingeAppTests.m */,
+				63E4209D1CBDCC4500085EE5 /* Info.plist */,
+			);
+			path = HingeAppTests;
+			sourceTree = "<group>";
+		};
+		63E420A51CBDCC4500085EE5 /* HingeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63E420A61CBDCC4500085EE5 /* HingeAppUITests.m */,
+				63E420A81CBDCC4500085EE5 /* Info.plist */,
+			);
+			path = HingeAppUITests;
+			sourceTree = "<group>";
+		};
+		63E420B41CBDCC5700085EE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63E420B51CBDCC5B00085EE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63E420871CBDCC4500085EE5 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63E420B61CBDCC6000085EE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63E420B71CBDCD6000085EE5 /* DPRCollectionVC.h */,
+				63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6CFBF809BAD5439C27FF601E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FD9EBE5E985762ADB31EAD9 /* Pods.debug.xcconfig */,
+				17D7197FBCEEBBA7C89CDAAD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E4207A1CBDCC4500085EE5 /* HingeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E420AB1CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeApp" */;
+			buildPhases = (
+				3A749E05DAB496E3905C145A /* Check Pods Manifest.lock */,
+				63E420771CBDCC4500085EE5 /* Sources */,
+				63E420781CBDCC4500085EE5 /* Frameworks */,
+				63E420791CBDCC4500085EE5 /* Resources */,
+				E000A17F2EF2FC3185AC04E9 /* Embed Pods Frameworks */,
+				C37E97F85DD01F3E36DCC75B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HingeApp;
+			productName = HingeApp;
+			productReference = 63E4207B1CBDCC4500085EE5 /* HingeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63E420961CBDCC4500085EE5 /* HingeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E420AE1CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeAppTests" */;
+			buildPhases = (
+				63E420931CBDCC4500085EE5 /* Sources */,
+				63E420941CBDCC4500085EE5 /* Frameworks */,
+				63E420951CBDCC4500085EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E420991CBDCC4500085EE5 /* PBXTargetDependency */,
+			);
+			name = HingeAppTests;
+			productName = HingeAppTests;
+			productReference = 63E420971CBDCC4500085EE5 /* HingeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63E420A11CBDCC4500085EE5 /* HingeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E420B11CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeAppUITests" */;
+			buildPhases = (
+				63E4209E1CBDCC4500085EE5 /* Sources */,
+				63E4209F1CBDCC4500085EE5 /* Frameworks */,
+				63E420A01CBDCC4500085EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E420A41CBDCC4500085EE5 /* PBXTargetDependency */,
+			);
+			name = HingeAppUITests;
+			productName = HingeAppUITests;
+			productReference = 63E420A21CBDCC4500085EE5 /* HingeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E420731CBDCC4500085EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Richardson";
+				TargetAttributes = {
+					63E4207A1CBDCC4500085EE5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					63E420961CBDCC4500085EE5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 63E4207A1CBDCC4500085EE5;
+					};
+					63E420A11CBDCC4500085EE5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 63E4207A1CBDCC4500085EE5;
+					};
+				};
+			};
+			buildConfigurationList = 63E420761CBDCC4500085EE5 /* Build configuration list for PBXProject "HingeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E420721CBDCC4500085EE5;
+			productRefGroup = 63E4207C1CBDCC4500085EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E4207A1CBDCC4500085EE5 /* HingeApp */,
+				63E420961CBDCC4500085EE5 /* HingeAppTests */,
+				63E420A11CBDCC4500085EE5 /* HingeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E420791CBDCC4500085EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E420911CBDCC4500085EE5 /* LaunchScreen.storyboard in Resources */,
+				63E4208E1CBDCC4500085EE5 /* Assets.xcassets in Resources */,
+				63E420891CBDCC4500085EE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E420951CBDCC4500085EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E420A01CBDCC4500085EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A749E05DAB496E3905C145A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C37E97F85DD01F3E36DCC75B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E000A17F2EF2FC3185AC04E9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E420771CBDCC4500085EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E4208C1CBDCC4500085EE5 /* HingeApp.xcdatamodeld in Sources */,
+				63E420831CBDCC4500085EE5 /* AppDelegate.m in Sources */,
+				63E420801CBDCC4500085EE5 /* main.m in Sources */,
+				63E420B91CBDCD6000085EE5 /* DPRCollectionVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E420931CBDCC4500085EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E4209C1CBDCC4500085EE5 /* HingeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E4209E1CBDCC4500085EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E420A71CBDCC4500085EE5 /* HingeAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E420991CBDCC4500085EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E4207A1CBDCC4500085EE5 /* HingeApp */;
+			targetProxy = 63E420981CBDCC4500085EE5 /* PBXContainerItemProxy */;
+		};
+		63E420A41CBDCC4500085EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E4207A1CBDCC4500085EE5 /* HingeApp */;
+			targetProxy = 63E420A31CBDCC4500085EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63E420871CBDCC4500085EE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E420881CBDCC4500085EE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63E4208F1CBDCC4500085EE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E420901CBDCC4500085EE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E420A91CBDCC4500085EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63E420AA1CBDCC4500085EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63E420AC1CBDCC4500085EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD9EBE5E985762ADB31EAD9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HingeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63E420AD1CBDCC4500085EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17D7197FBCEEBBA7C89CDAAD /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HingeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63E420AF1CBDCC4500085EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HingeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HingeApp.app/HingeApp";
+			};
+			name = Debug;
+		};
+		63E420B01CBDCC4500085EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HingeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HingeApp.app/HingeApp";
+			};
+			name = Release;
+		};
+		63E420B21CBDCC4500085EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HingeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HingeApp;
+			};
+			name = Debug;
+		};
+		63E420B31CBDCC4500085EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HingeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.HingeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HingeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E420761CBDCC4500085EE5 /* Build configuration list for PBXProject "HingeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E420A91CBDCC4500085EE5 /* Debug */,
+				63E420AA1CBDCC4500085EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E420AB1CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E420AC1CBDCC4500085EE5 /* Debug */,
+				63E420AD1CBDCC4500085EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E420AE1CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E420AF1CBDCC4500085EE5 /* Debug */,
+				63E420B01CBDCC4500085EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E420B11CBDCC4500085EE5 /* Build configuration list for PBXNativeTarget "HingeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E420B21CBDCC4500085EE5 /* Debug */,
+				63E420B31CBDCC4500085EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63E4208A1CBDCC4500085EE5 /* HingeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63E4208B1CBDCC4500085EE5 /* HingeApp.xcdatamodel */,
+			);
+			currentVersion = 63E4208B1CBDCC4500085EE5 /* HingeApp.xcdatamodel */;
+			path = HingeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63E420731CBDCC4500085EE5 /* Project object */;
+}
