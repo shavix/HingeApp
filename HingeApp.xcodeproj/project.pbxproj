@@ -15,7 +15,10 @@
 		63E420911CBDCC4500085EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4208F1CBDCC4500085EE5 /* LaunchScreen.storyboard */; };
 		63E4209C1CBDCC4500085EE5 /* HingeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E4209B1CBDCC4500085EE5 /* HingeAppTests.m */; };
 		63E420A71CBDCC4500085EE5 /* HingeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420A61CBDCC4500085EE5 /* HingeAppUITests.m */; };
-		63E420B91CBDCD6000085EE5 /* DPRCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */; };
+		63E420B91CBDCD6000085EE5 /* DPRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420B81CBDCD6000085EE5 /* DPRTableViewController.m */; };
+		63E420BC1CBE280900085EE5 /* DPRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420BB1CBE280900085EE5 /* DPRTableViewCell.m */; };
+		63E420BF1CBE319200085EE5 /* DPRImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420BE1CBE319200085EE5 /* DPRImageDownload.m */; };
+		63E420C21CBE334600085EE5 /* DPRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E420C11CBE334600085EE5 /* DPRDetailViewController.m */; };
 		ED0103F54EB1047331522F4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C472082D82B1B0D0D54D7FF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +57,14 @@
 		63E420A21CBDCC4500085EE5 /* HingeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HingeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E420A61CBDCC4500085EE5 /* HingeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HingeAppUITests.m; sourceTree = "<group>"; };
 		63E420A81CBDCC4500085EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E420B71CBDCD6000085EE5 /* DPRCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRCollectionVC.h; sourceTree = "<group>"; };
-		63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRCollectionVC.m; sourceTree = "<group>"; };
+		63E420B71CBDCD6000085EE5 /* DPRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRTableViewController.h; sourceTree = "<group>"; };
+		63E420B81CBDCD6000085EE5 /* DPRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRTableViewController.m; sourceTree = "<group>"; };
+		63E420BA1CBE280900085EE5 /* DPRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRTableViewCell.h; sourceTree = "<group>"; };
+		63E420BB1CBE280900085EE5 /* DPRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRTableViewCell.m; sourceTree = "<group>"; };
+		63E420BD1CBE319200085EE5 /* DPRImageDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRImageDownload.h; sourceTree = "<group>"; };
+		63E420BE1CBE319200085EE5 /* DPRImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRImageDownload.m; sourceTree = "<group>"; };
+		63E420C01CBE334600085EE5 /* DPRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRDetailViewController.h; sourceTree = "<group>"; };
+		63E420C11CBE334600085EE5 /* DPRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRDetailViewController.m; sourceTree = "<group>"; };
 		6C472082D82B1B0D0D54D7FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,9 +127,9 @@
 		63E4207D1CBDCC4500085EE5 /* HingeApp */ = {
 			isa = PBXGroup;
 			children = (
-				63E420B61CBDCC6000085EE5 /* Controller */,
 				63E420B51CBDCC5B00085EE5 /* View */,
 				63E420B41CBDCC5700085EE5 /* Model */,
+				63E420B61CBDCC6000085EE5 /* Controller */,
 				63E420811CBDCC4500085EE5 /* AppDelegate.h */,
 				63E420821CBDCC4500085EE5 /* AppDelegate.m */,
 				63E4208D1CBDCC4500085EE5 /* Assets.xcassets */,
@@ -161,6 +170,10 @@
 		63E420B41CBDCC5700085EE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63E420BA1CBE280900085EE5 /* DPRTableViewCell.h */,
+				63E420BB1CBE280900085EE5 /* DPRTableViewCell.m */,
+				63E420BD1CBE319200085EE5 /* DPRImageDownload.h */,
+				63E420BE1CBE319200085EE5 /* DPRImageDownload.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -176,8 +189,10 @@
 		63E420B61CBDCC6000085EE5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				63E420B71CBDCD6000085EE5 /* DPRCollectionVC.h */,
-				63E420B81CBDCD6000085EE5 /* DPRCollectionVC.m */,
+				63E420B71CBDCD6000085EE5 /* DPRTableViewController.h */,
+				63E420B81CBDCD6000085EE5 /* DPRTableViewController.m */,
+				63E420C01CBE334600085EE5 /* DPRDetailViewController.h */,
+				63E420C11CBE334600085EE5 /* DPRDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -373,9 +388,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E4208C1CBDCC4500085EE5 /* HingeApp.xcdatamodeld in Sources */,
+				63E420BC1CBE280900085EE5 /* DPRTableViewCell.m in Sources */,
 				63E420831CBDCC4500085EE5 /* AppDelegate.m in Sources */,
 				63E420801CBDCC4500085EE5 /* main.m in Sources */,
-				63E420B91CBDCD6000085EE5 /* DPRCollectionVC.m in Sources */,
+				63E420C21CBE334600085EE5 /* DPRDetailViewController.m in Sources */,
+				63E420BF1CBE319200085EE5 /* DPRImageDownload.m in Sources */,
+				63E420B91CBDCD6000085EE5 /* DPRTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

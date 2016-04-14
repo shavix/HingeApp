@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPRCollectionVC : UITableViewController
+@interface DPRTableViewController : UITableViewController <NSURLSessionDelegate>
+
+
+- (void)reloadImages:(NSMutableArray *)images;
 
 @end
