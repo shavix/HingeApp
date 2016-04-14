@@ -10,7 +10,7 @@
 
 @interface DPRTableViewController : UITableViewController <NSURLSessionDelegate>
 
-
+// on delete clicked in detailViewController: reload imageDownloads data
 - (void)reloadImages:(NSMutableArray *)images;
 
 @end

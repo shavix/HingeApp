@@ -10,7 +10,9 @@
 
 @interface DPRDetailViewController : UIViewController
 
+// array of imageDownloads
 @property (strong, nonatomic) NSMutableArray *imageDownloads;
+// index of currentImage
 @property NSInteger currIndex;
 
 @end

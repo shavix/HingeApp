@@ -35,11 +35,12 @@
     self.navigationItem.title = [NSString stringWithFormat:@"%ld/%ld", _currIndex + 1, [_imageDownloads count]];
     self.view.backgroundColor = [UIColor blackColor];
     
-    DPRImageDownload *imageDownload = _imageDownloads[_currIndex];
+    // get initial imageDownload
+    DPRImageDownload *firstImageDownload = _imageDownloads[_currIndex];
     
-    // imageView
+    // create imageView (with firstImageDownload.image as image)
     self.imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-    _imageView.image = imageDownload.image;
+    _imageView.image = firstImageDownload.image;
     _imageView.contentMode = UIViewContentModeScaleAspectFit;
     _imageView.autoresizingMask =
     ( UIViewAutoresizingFlexibleBottomMargin
@@ -60,25 +61,27 @@
     self.navigationItem.rightBarButtonItem = deleteButton;
     
     
-    // animation
+    // animation: next image every 2 seconds
     self.timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(nextImage:) userInfo:Nil repeats:YES];
     
 }
 
 
-#pragma mark - Animation
+#pragma mark - Images
 
 // animate next image
 - (void)nextImage:(id)sender {
     
     _currIndex++;
     
-    // start again
+    // restart loop
     if(_currIndex == [_imageDownloads count]){
         _currIndex = 0;
     }
+    // update navigationBar status
     self.navigationItem.title = [NSString stringWithFormat:@"%ld/%ld", _currIndex + 1, [_imageDownloads count]];
 
+    // update imageView image
     DPRImageDownload *imageDownload = _imageDownloads[_currIndex];
     _imageView.image = imageDownload.image;
     
@@ -86,15 +89,18 @@
 
 - (void)deleteImage:(id)sender {
     
+    // stop timer operations
     [self.timer invalidate];
     
+    // delete image
     [_imageDownloads removeObjectAtIndex:_currIndex];
     
+    // update tableViewController data
     NSArray *viewControllers = self.navigationController.viewControllers;
     DPRTableViewController *tableViewController = (DPRTableViewController *)[viewControllers objectAtIndex:0];
-    
     [tableViewController reloadImages:_imageDownloads];
     
+    // return to tableViewController
     [self.navigationController popViewControllerAnimated:YES];
     
 }
